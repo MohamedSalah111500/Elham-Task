@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+
+.align-center{
+    align-items: center;
+}
+.f-bold{
+    font-weight: bold !important
+}
+.no-padding{
+padding: 0 !important
+}
+
+.mt-5{
+    margin-top: 5px !important;
+}
+
+.b-radius-50{
+    border-radius: 50%;
+}
+.bg-dark-white{
+     background-color: $darkwhite-color;
+}
+.w-h-100{
+    width: 100px;
+    height: 100px;
+}

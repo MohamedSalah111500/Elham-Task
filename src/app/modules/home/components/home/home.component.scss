@@ -1,0 +1,30 @@
+@import "../../../../../scss/abstracts/variables";
+
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr th {
+      font-weight: bold;
+    }
+    
+    th, td {
+      padding: 15px;
+  
+    }
+    td{
+      cursor: pointer;
+    }
+  }
+
+
+
+  fa-icon{
+    font-size: large;
+    color: $custom-Blue;
+  }

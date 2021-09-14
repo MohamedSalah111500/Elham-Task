@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="card item-card card-details">
+  <div class="container">
+    <!-- <app-empty-state *ngIf="!productsFiltered?.length && !isLoading"></app-empty-state> -->
+    <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+    <div class="row align-items-center">
+      <!-- <div class="col-lg-4 col-md-4 col-12" *ngFor="let product of productsFiltered">
+                <app-item-card [product]="product"></app-item-card>
+            </div> -->
+           
+      <table>
+        <tr>
+          <th>Hero Name</th>
+          <th>Powers</th>
+          <th>Rate</th>
+        </tr>
+        
+        <tr *ngFor="let hero of herosFiltered">
+          <td>
+            <a [routerLink]="['/hero', hero.id]">{{ hero.heroName }}</a>
+          </td>
+          <td>
+            <a [routerLink]="['/hero', hero.id]">{{ hero.power }}</a>
+          </td>
+          <td>{{ hero.rate }} <fa-icon [icon]="faStar"></fa-icon> <fa-icon [icon]="faStar"></fa-icon> <fa-icon [icon]="faStar"></fa-icon> </td>
+          
+        </tr >
+        <tr  class="text-center" *ngIf="!herosFiltered.length"> <p>no result for your search</p> </tr>
+      </table>
+    </div>
+  </div>
+  <!-- <app-footer></app-footer> -->
+</div>

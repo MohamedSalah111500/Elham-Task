@@ -1,0 +1,94 @@
+@import "../../../../scss/abstracts/variables";
+
+.inputBlock {
+    background-color: white;
+    height: 37px;
+    border-radius: 22px;
+    max-width: 500px;
+    select {
+        background: white;
+        height: inherit;
+        border-radius: 22px 0 0 22px;
+        width: 30%;
+        border: 1px solid #d0cece;
+        padding: 0 10px;
+    }
+    input {
+        height: inherit;
+        border: 2px solid $custom-Blue;
+        outline: $custom-Blue;
+        width: 100%;
+        padding: 0 10px;
+        padding-left: 6%;
+
+        caret-color: $custom-Blue;
+        position: relative;
+    }
+    fa-icon{
+        position: absolute;
+        top: 25%;
+        left: 6%;
+       color: rgb(134 141 148);
+    }
+    // input:active{
+    //     border: 10 solid $custom-Blue;
+    //     outline: $custom-Blue;
+
+    // }
+    
+    button {
+        background-color: $secondary-color;
+        color: white;
+        height: inherit;
+        border-radius: 0 22px 22px 0;
+        border: 0;
+        width: 20%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 969px) {
+    .inputBlock {
+        select {
+            width: 25%;
+            padding: 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 0 5px;
+            padding-left: 5%;
+            position: relative;
+
+
+        }
+        fa-icon{
+            position: absolute;
+            top: 25%;
+            left: 3%;
+        }
+    }
+}
+
+
+// restyle for mobile screen
+@media only screen and (max-width: 597px) {
+    .inputBlock {
+        select {
+            width: 25%;
+            padding: 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 0 5px;
+            padding-left: 5%;
+            position: relative;
+
+
+        }
+        fa-icon{
+            position: absolute;
+            top: 25%;
+            left: 4%;
+        }
+    }
+}

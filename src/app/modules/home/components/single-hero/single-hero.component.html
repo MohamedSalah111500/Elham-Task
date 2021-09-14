@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row" *ngIf="hero">
+    <div class="col col-12">
+      <div class="bg-dark-white b-radius-50 w-h-100 avatar">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+      <div class="personal-info">
+        <p class="text-left" style="margin-right: 5%">Hero Name :</p>
+        <p>
+          {{ hero.heroName }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
